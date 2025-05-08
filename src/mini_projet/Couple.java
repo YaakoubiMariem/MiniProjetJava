@@ -1,15 +1,14 @@
 package mini_projet;
 
-
 public class Couple {
-    private final Personne p1;
-    private final Personne p2;
+    private final NomAvecId nomAvecId1;
+    private final NomAvecId nomAvecId2;
 
-    public Couple(Personne p1, Personne p2) {
-        this.p1 = p1;
-        this.p2 = p2;
+    public Couple(NomAvecId nomAvecId1, NomAvecId nomAvecId2) {
+        this.nomAvecId1 = nomAvecId1;
+        this.nomAvecId2 = nomAvecId2;
     }
 
-    public Personne getP1() { return p1; }
-    public Personne getP2() { return p2; }
+    public NomAvecId getNomAvecId1() { return nomAvecId1; }
+    public NomAvecId getNomAvecId2() { return nomAvecId2; }
 }

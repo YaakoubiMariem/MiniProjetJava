@@ -2,9 +2,6 @@ package mini_projet;
 
 import java.util.List;
 
-/**
- * Une implémentation simple du ComparateurNom qui utilise equals pour comparer les noms
- */
 public class ComparateurNomEquals implements ComparateurNom {
 
 

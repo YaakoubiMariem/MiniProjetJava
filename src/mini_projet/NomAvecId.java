@@ -1,10 +1,11 @@
 package mini_projet;
-
-public class Personne {
+public class NomAvecId {
+	
+	
     private String id;
     private Nom nom;
 
-    public Personne(String id, Nom nom) {
+    public NomAvecId(String id, Nom nom) {
         this.id = id;
         this.nom = nom;
     }
