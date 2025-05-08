@@ -5,3 +5,4 @@ public interface Pretraitements {
 	List<String> traiter(List<String> chaines);
 
 }
+

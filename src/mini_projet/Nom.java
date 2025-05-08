@@ -3,24 +3,30 @@ package mini_projet;
 import java.util.List;
 
 public class Nom {
-    private String nom;
-    private List<String> mots;
+    private String nomComplet;
+    private List<String> nomTraite;
 
-    public Nom(String nom) {
-        this.nom = nom;
+    public Nom(String nomComplet) {
+        this.nomComplet = nomComplet;
     }
 
-    public Nom(List<String> mots) {
+    public Nom(List<String> nomTraite) {
 		super();
-		this.mots = mots;
+		this.nomTraite = nomTraite;
 	}
 
-	public String getNom() {
-        return nom;
+	public String getNomComplet() {
+        return nomComplet;
     }
 
-	public List<String> getMots() {
-		return mots;
+	public List<String> getNomTraite() {
+		return nomTraite;
+	}
+
+
+
+	public void setNomTraite(List<String> nomTraite) {
+		this.nomTraite = nomTraite;
 	}
 
 
