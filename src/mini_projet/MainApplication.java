@@ -11,26 +11,15 @@ public class MainApplication{
     	            new Personne("3", new Nom("Hichem Trabelsi")),
     	            new Personne("4", new Nom("Sonia Bouzid"))
     	        );
-
-    	        // Nom à rechercher
     	        String nomRecherche = "Fatma Chaabane";
-
-    	        // Composants simples
-
     	        Pretraitements pretraitementIdentite = new PretraitementsIdentite();
     	        GenerateurCandidats generateur = new GenerateurCandidatsTous();
     	        Selectionneur selectionneur = new SelectionneurTout();
     	        ComparateurNom comparateur = new ComparateurNomEquals();
     	        List<Pretraitements> pretraitements = new ArrayList<>();
     	        pretraitements.add(pretraitementIdentite);
-    	        // Initialisation du moteur
     	        MoteurMatching moteur = new MoteurMatching(pretraitements, generateur, selectionneur, comparateur);
-
-    	        // Recherche
     	        List<ResultatComparaison> resultats = moteur.rechercher(personnes, nomRecherche);
-
-    	        // Affichage des résultats
-    	     // Affichage des résultats
     	        if (resultats.isEmpty()) {
     	            System.out.println("Aucun résultat trouvé.");
     	        } else {
