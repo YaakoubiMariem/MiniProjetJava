@@ -20,3 +20,4 @@ public class PretraiteurSansAccents implements Pretraiteur {
         return resultat;
     }
 }
+

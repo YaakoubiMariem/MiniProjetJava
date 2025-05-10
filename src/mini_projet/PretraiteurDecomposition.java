@@ -16,3 +16,4 @@ public class PretraiteurDecomposition implements Pretraiteur {
         return resultat;
     }
 }
+

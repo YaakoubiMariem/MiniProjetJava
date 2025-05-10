@@ -14,3 +14,4 @@ public class MainPretraiteurMinuscule {
         System.out.println("Sortie (minuscules) : " + sortie);
     }
 }
+

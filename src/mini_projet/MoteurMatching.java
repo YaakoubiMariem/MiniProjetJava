@@ -10,7 +10,6 @@ public class MoteurMatching {
     private ComparateurNom comparateurNom;
 
 
-
     public MoteurMatching(List<Pretraiteur> pretraiteurs, GenerateurCandidats generateurCandidats,
 			Selectionneur selectionneur, ComparateurNom comparateurNom) {
 		this.pretraiteurs = pretraiteurs= new ArrayList<>();

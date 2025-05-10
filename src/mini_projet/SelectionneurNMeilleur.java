@@ -18,7 +18,7 @@ public class SelectionneurNMeilleur implements Selectionneur {
 	        List<CoupleNomsAvecScore> topK = new ArrayList<>();
 	        for (int i = 0; i < Math.min(k, resultats.size()); i++) {
 	            topK.add(resultats.get(i));
-	        }        
+	        }         
 	        return topK;
 	    }
 	}

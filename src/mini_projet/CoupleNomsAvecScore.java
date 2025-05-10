@@ -17,3 +17,4 @@ public class CoupleNomsAvecScore {
     public Nom getNom2() { return nom2; }
 
 }
+

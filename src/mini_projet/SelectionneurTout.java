@@ -8,4 +8,4 @@ public class SelectionneurTout implements Selectionneur {
     public List<CoupleNomsAvecScore> selectionner(List<CoupleNomsAvecScore> resultats) {
         return resultats;
     }
-}
+} 

@@ -13,3 +13,4 @@ public class MainPretraiteurDecomposition {
         System.out.println("Sortie (découpée) : " + sortie);
     }
 }
+

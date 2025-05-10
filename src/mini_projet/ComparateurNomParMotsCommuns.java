@@ -6,7 +6,7 @@ import java.util.Set;
 
 public class ComparateurNomParMotsCommuns implements ComparateurNom {
 
-    
+  
     public double comparer(Nom n1, Nom n2) {
         List<String> mots1 = n1.getNomTraite();
         List<String> mots2 = n2.getNomTraite();
@@ -17,12 +17,8 @@ public class ComparateurNomParMotsCommuns implements ComparateurNom {
 
         Set<String> set1 = new HashSet<>(mots1);
         Set<String> set2 = new HashSet<>(mots2);
-
-        // Intersection : mots communs
         set1.retainAll(set2);
         int motsCommuns = set1.size();
-
-        // Score basé sur la moyenne des tailles
         double tailleMoyenne = (mots1.size() + mots2.size()) / 2.0;
         return motsCommuns / tailleMoyenne;
     }

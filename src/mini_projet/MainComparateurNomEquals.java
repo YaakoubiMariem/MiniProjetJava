@@ -15,3 +15,4 @@ public class MainComparateurNomEquals {
         System.out.println("Score de similarité : " + score);
     }
 }
+

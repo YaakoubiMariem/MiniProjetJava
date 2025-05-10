@@ -12,3 +12,4 @@ public class PretraiteurMinuscule implements Pretraiteur {
         return nomTraite;
     }
 }
+

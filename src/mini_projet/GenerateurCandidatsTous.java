@@ -19,3 +19,4 @@ public class GenerateurCandidatsTous implements GenerateurCandidats {
     }
    
 }
+

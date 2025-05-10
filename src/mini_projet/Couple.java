@@ -12,3 +12,4 @@ public class Couple {
     public Nom getNom1() { return nom1; }
     public Nom getNom2() { return nom2; }
 }
+

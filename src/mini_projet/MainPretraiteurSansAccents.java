@@ -13,3 +13,4 @@ public class MainPretraiteurSansAccents {
         System.out.println("Sortie (sans accents) : " + sortie);
     }
 }
+

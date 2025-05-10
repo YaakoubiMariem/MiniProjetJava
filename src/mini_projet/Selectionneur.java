@@ -5,3 +5,4 @@ public interface Selectionneur {
 	List<CoupleNomsAvecScore> selectionner(List<CoupleNomsAvecScore> resultats);
 
 }
+
