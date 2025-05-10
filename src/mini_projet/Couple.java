@@ -1,5 +1,4 @@
 package mini_projet;
-
 public class Couple {
     private final Nom nom1;
     private final Nom nom2;

@@ -18,3 +18,4 @@ public class MainComparateurNomParMotsCommuns {
         System.out.println("Score de similarité : " + score);
     }
 }
+

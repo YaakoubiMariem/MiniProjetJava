@@ -13,3 +13,4 @@ public class PretraiteurMinuscule implements Pretraiteur {
     }
 }
 
+

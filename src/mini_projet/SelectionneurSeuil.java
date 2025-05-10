@@ -17,8 +17,7 @@ public class SelectionneurSeuil implements Selectionneur {
             if (couple.getScore() >= seuil) {
                 resultatsFiltre.add(couple);
             }
-        } 
-        
+        }    
         return resultatsFiltre;
     }
 }

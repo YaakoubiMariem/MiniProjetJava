@@ -1,7 +1,6 @@
 package mini_projet;
 import java.util.List;
 
-
 public class Nom {
 	private String id;
     private String nomComplet;

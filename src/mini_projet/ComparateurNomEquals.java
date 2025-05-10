@@ -18,3 +18,4 @@ public class ComparateurNomEquals implements ComparateurNom {
 	        }
 	    }
 	}
+

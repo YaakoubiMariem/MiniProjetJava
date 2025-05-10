@@ -1,6 +1,5 @@
 package mini_projet;
 
-
 public class CoupleNomsAvecScore {
     private final double score;
     private final Nom nom1;
