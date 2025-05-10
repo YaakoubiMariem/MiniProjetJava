@@ -4,8 +4,7 @@ import java.util.List;
 import java.util.Set;
 
 public class ComparateurNomParMotsCommuns implements ComparateurNom {
-
-  
+ 
     public double comparer(Nom n1, Nom n2) {
         List<String> mots1 = n1.getNomTraite();
         List<String> mots2 = n2.getNomTraite();
