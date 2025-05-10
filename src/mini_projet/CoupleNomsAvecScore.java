@@ -3,17 +3,17 @@ package mini_projet;
 
 public class CoupleNomsAvecScore {
     private final double score;
-    private final NomAvecId personne1;
-    private final NomAvecId personne2;
+    private final Nom nom1;
+    private final Nom nom2;
 
-    public CoupleNomsAvecScore(double score, NomAvecId p1, NomAvecId p2) {
+    public CoupleNomsAvecScore(double score, Nom p1, Nom p2) {
         this.score = score;
-        this.personne1 = p1;
-        this.personne2 = p2;
+        this.nom1 = p1;
+        this.nom2 = p2;
     }
 
     public double getScore() { return score; }
-    public NomAvecId getPersonne1() { return personne1; }
-    public NomAvecId getPersonne2() { return personne2; }
+    public Nom getNom1() { return nom1; }
+    public Nom getNom2() { return nom2; }
 
 }

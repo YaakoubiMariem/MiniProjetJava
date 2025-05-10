@@ -5,11 +5,11 @@ import java.util.List;
 
 public class MainApplication{
     public static void main(String[] args) {
-    	 List<NomAvecId> nomAvecIds = List.of(
-    	            new NomAvecId("1", new Nom("Ahmed Ben Salah")),
-    	            new NomAvecId("2", new Nom("Fatma Chaabane")),
-    	            new NomAvecId("3", new Nom("Hichem Trabelsi")),
-    	            new NomAvecId("4", new Nom("Sonia Bouzid"))
+    	 List<Nom> nomAvecIds = List.of(
+    	            new Nom("1", "Ahmed Ben Salah"),
+    	            new Nom("2", "Fatma Chaabane"),
+    	            new Nom("3", "Hichem Trabelsi"),
+    	            new Nom("4",  "Sonia Bouzid")
     	        );
     	        String nomRecherche = "Fatma Chaabane";
     	        Pretraiteur pretraitementIdentite = new PretraiteurIdentite();
@@ -25,7 +25,7 @@ public class MainApplication{
     	        } else {
     	            System.out.println("Résultats de la recherche pour '"+ nomRecherche + "':");
     	            for (CoupleNomsAvecScore resultat : resultats) {
-    	                System.out.println("- " + resultat.getPersonne2().getNom().getNomComplet() + " (Score : " + resultat.getScore() + ")");
+    	                System.out.println("- " + resultat.getNom2().getNomComplet() + " (Score : " + resultat.getScore() + ")");
     	            }
     	        }
 

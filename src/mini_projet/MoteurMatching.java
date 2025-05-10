@@ -13,38 +13,37 @@ public class MoteurMatching {
 
     public MoteurMatching(List<Pretraiteur> pretraiteurs, GenerateurCandidats generateurCandidats,
 			Selectionneur selectionneur, ComparateurNom comparateurNom) {
-		this.pretraiteurs = pretraiteurs;
+		this.pretraiteurs = pretraiteurs= new ArrayList<>();
 		this.generateurCandidats = generateurCandidats;
 		this.selectionneur = selectionneur;
 		this.comparateurNom = comparateurNom;
 	}
 
 
-	public List<CoupleNomsAvecScore> rechercher(List<NomAvecId> nomAvecIds, String nomRecherche) {
+	public List<CoupleNomsAvecScore> rechercher(List<Nom> noms, String nomRecherche) {
        
-        List<NomAvecId> personnesTraitees = new ArrayList<>();
-        for (NomAvecId p : nomAvecIds) {
-            Nom nom = p.getNom();
-            List<String> nomTraite = List.of(nom.getNomComplet());
+        for (Nom n : noms) {
+        	List<String> nomTraite = List.of(n.getNomComplet());
             for (Pretraiteur pretraiteur : pretraiteurs) {
             	nomTraite = pretraiteur.traiter(nomTraite);
             }
-            nom.setNomTraite(nomTraite);
-            personnesTraitees.add(new NomAvecId(p.getId(), nom));
+            n.setNomTraite(nomTraite);
         }
-
-
-        List<String> nomRechercheTraite = new ArrayList<>();
+ 
+        Nom nomARecherche = new Nom("recherche", nomRecherche);
+        List<String> nomRechercheTraite = List.of(nomRecherche);
         for (Pretraiteur pretaiteur : pretraiteurs) {
-        	nomRechercheTraite = pretaiteur.traiter(List.of(nomRecherche));
+        	nomRechercheTraite = pretaiteur.traiter(nomRechercheTraite);
         }
-        NomAvecId listNomRecherche = new NomAvecId("recherche", new Nom(nomRechercheTraite));
-        List<Couple> couples = generateurCandidats.generer(List.of(listNomRecherche), personnesTraitees);
+        nomARecherche.setNomTraite(nomRechercheTraite);
+
+        
+        List<Couple> couples = generateurCandidats.generer(List.of(nomARecherche), noms);
 
         List<CoupleNomsAvecScore> resultats = new ArrayList<>();
         for (Couple couple : couples) {
-            double score = comparateurNom.comparer(couple.getNomAvecId1().getNom(), couple.getNomAvecId2().getNom());
-            resultats.add(new CoupleNomsAvecScore(score, couple.getNomAvecId1(), couple.getNomAvecId2()));
+            double score = comparateurNom.comparer(couple.getNom1(), couple.getNom2());
+            resultats.add(new CoupleNomsAvecScore(score, couple.getNom1(), couple.getNom2()));
         }
 
         return selectionneur.selectionner(resultats);

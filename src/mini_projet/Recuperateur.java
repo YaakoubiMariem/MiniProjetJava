@@ -2,5 +2,5 @@ package mini_projet;
 import java.util.List;
 
 public interface Recuperateur {
-	List<NomAvecId> recupererNom();
+	List<Nom> recupererNom();
 }
