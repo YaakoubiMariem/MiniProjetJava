@@ -9,3 +9,4 @@ public class SelectionneurTout implements Selectionneur {
         return resultats;
     }
 } 
+
