@@ -9,9 +9,9 @@ public class GenerateurCandidatsTous implements GenerateurCandidats {
     public List<Couple> generer(List<Nom> liste1, List<Nom> liste2) {
         List<Couple> couples = new ArrayList<>();
         
-        for (Nom p1 : liste1) {
-            for (Nom p2 : liste2) {
-                couples.add(new Couple(p1, p2));
+        for (Nom n1 : liste1) {
+            for (Nom n2 : liste2) {
+                couples.add(new Couple(n1, n2));
             }
         }
         
