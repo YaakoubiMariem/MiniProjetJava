@@ -1,4 +1,5 @@
 package mini_projet;
+<<<<<<< HEAD
 import java.util.*;
 
 public class GenerateurParMotsCommunsAvecIndex implements GenerateurCandidats {
@@ -10,6 +11,22 @@ public class GenerateurParMotsCommunsAvecIndex implements GenerateurCandidats {
         this.intervalle = intervalle;
         this.indexParNbMots = new HashMap<>();
     }
+=======
+
+import java.util.*;
+
+public class GenerateurParMotsCommunsAvecIndex implements GenerateurCandidats {
+
+    private final int intervalle;
+    private final Map<Integer, List<Nom>> indexParNbMots;
+
+    public GenerateurParMotsCommunsAvecIndex(int intervalle) {
+        this.intervalle = intervalle;
+        this.indexParNbMots = new HashMap<>();
+    }
+
+    // Méthode pour construire l'index depuis liste2
+>>>>>>> branch 'master' of https://github.com/YaakoubiMariem/MiniProjetJava.git
     public void construireIndex(List<Nom> liste2) {
         indexParNbMots.clear();
         for (Nom n : liste2) {

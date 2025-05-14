@@ -1,4 +1,8 @@
 package mini_projet;
+<<<<<<< HEAD
+=======
+
+>>>>>>> branch 'master' of https://github.com/YaakoubiMariem/MiniProjetJava.git
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;

@@ -1,4 +1,5 @@
 package mini_projet;
+<<<<<<< HEAD
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,6 +12,21 @@ public class MoteurMatching {
     public MoteurMatching(List<Pretraiteur> pretraiteurs, GenerateurCandidats generateurCandidats,
 			Selectionneur selectionneur, ComparateurNom comparateurNom) {
 		this.pretraiteurs = pretraiteurs;
+=======
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class MoteurMatching {
+    private List<Pretraiteur> pretraiteurs;
+    private GenerateurCandidats generateurCandidats;
+    private Selectionneur selectionneur;
+    private ComparateurNom comparateurNom;
+
+    public MoteurMatching(List<Pretraiteur> pretraiteurs, GenerateurCandidats generateurCandidats,
+			Selectionneur selectionneur, ComparateurNom comparateurNom) {
+		this.pretraiteurs = pretraiteurs= new ArrayList<>();
+>>>>>>> branch 'master' of https://github.com/YaakoubiMariem/MiniProjetJava.git
 		this.generateurCandidats = generateurCandidats;
 		this.selectionneur = selectionneur;
 		this.comparateurNom = comparateurNom;

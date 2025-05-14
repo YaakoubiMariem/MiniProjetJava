@@ -6,7 +6,10 @@ org.eclipse.jdt.core.compiler.debug.lineNumber=generate
 org.eclipse.jdt.core.compiler.debug.localVariable=generate
 org.eclipse.jdt.core.compiler.debug.sourceFile=generate
 org.eclipse.jdt.core.compiler.problem.enablePreviewFeatures=disabled
+<<<<<<< HEAD
 org.eclipse.jdt.core.compiler.problem.forbiddenReference=warning
+=======
+>>>>>>> branch 'master' of https://github.com/YaakoubiMariem/MiniProjetJava.git
 org.eclipse.jdt.core.compiler.problem.reportPreviewFeatures=warning
 org.eclipse.jdt.core.compiler.release=enabled
 org.eclipse.jdt.core.compiler.source=21

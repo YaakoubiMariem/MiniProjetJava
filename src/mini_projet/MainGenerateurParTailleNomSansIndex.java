@@ -1,4 +1,5 @@
 package mini_projet;
+<<<<<<< HEAD
 import java.util.ArrayList;
 import java.util.List;
 
@@ -6,6 +7,15 @@ public class MainGenerateurParTailleNomSansIndex {
 
 	 public static void main(String[] args) {
 
+=======
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class MainGenerateurParTailleNomSansIndex {
+
+	 public static void main(String[] args) {
+>>>>>>> branch 'master' of https://github.com/YaakoubiMariem/MiniProjetJava.git
 	        // Création des noms
 	        Nom nom1 = new Nom("1", "Jean Dupont");
 	        Nom nom2 = new Nom("2", "Juan Carlos García");

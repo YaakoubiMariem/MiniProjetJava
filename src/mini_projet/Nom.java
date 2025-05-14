@@ -36,4 +36,14 @@ public class Nom {
 	public String getId() {
 		return id;
 	}
+<<<<<<< HEAD
+=======
+
+
+
+
+
+
+
+>>>>>>> branch 'master' of https://github.com/YaakoubiMariem/MiniProjetJava.git
 }
