@@ -1,8 +1,4 @@
 package mini_projet;
-<<<<<<< HEAD
-=======
-
->>>>>>> branch 'master' of https://github.com/YaakoubiMariem/MiniProjetJava.git
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,7 +11,6 @@ public class GenerateurParMotsCommunsSansIndex  implements GenerateurCandidats {
 	        this.intervalle = intervalle;
 	    }
 
-	    @Override
 	    public List<Couple> generer(List<Nom> liste1, List<Nom> liste2) {
 	        List<Couple> couples = new ArrayList<>();
 
