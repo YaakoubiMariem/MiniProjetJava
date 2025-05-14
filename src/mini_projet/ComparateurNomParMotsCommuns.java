@@ -12,10 +12,7 @@ public class ComparateurNomParMotsCommuns implements ComparateurNom {
         if (mots1 == null || mots2 == null || mots1.isEmpty() || mots2.isEmpty()) {
             return 0.0;
         }
-<<<<<<< HEAD
-=======
 
->>>>>>> branch 'master' of https://github.com/YaakoubiMariem/MiniProjetJava.git
         Set<String> set1 = new HashSet<>(mots1);
         Set<String> set2 = new HashSet<>(mots2);
         set1.retainAll(set2);
