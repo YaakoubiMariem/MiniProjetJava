@@ -1,5 +1,4 @@
 package mini_projet;
-
 import org.apache.commons.text.similarity.CosineSimilarity;
 
 import java.util.HashMap;
