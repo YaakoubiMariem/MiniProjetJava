@@ -8,7 +8,6 @@ import java.util.Map;
 public class ComparateurCosinus implements ComparateurChaine {
     private final CosineSimilarity cosine = new CosineSimilarity();
 
-    @Override
     public double comparer(String s1, String s2) {
         Map<CharSequence, Integer> freq1 = getCharacterFrequencies(s1);
         Map<CharSequence, Integer> freq2 = getCharacterFrequencies(s2);
@@ -23,7 +22,6 @@ public class ComparateurCosinus implements ComparateurChaine {
         return freqMap;
     }
 
-    @Override
     public TypeMesure getType() {
         return TypeMesure.SIMILARITE;
     }

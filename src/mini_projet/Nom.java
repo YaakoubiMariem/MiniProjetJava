@@ -36,11 +36,4 @@ public class Nom {
 	public String getId() {
 		return id;
 	}
-
-
-
-
-
-
-
 }

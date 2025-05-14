@@ -1,5 +1,4 @@
 package mini_projet;
-
 import java.util.*;
 
 public class GenerateurParTailleNomAvecIndex implements GenerateurCandidats {

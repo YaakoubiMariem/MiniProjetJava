@@ -5,7 +5,6 @@ public class MainPretraiteurSoundex {
     public static void main(String[] args) {
         // Create an instance of PretraiteurSoundex
         PretraiteurSoundex pretraiteur = new PretraiteurSoundex();
-        
         // Create a list of test words
         List<String> mots = List.of("Robert", "Rupert", "Rubin", "hello", "hallo", "hollow");
         

@@ -1,6 +1,4 @@
 package mini_projet;
-
-
 import java.util.List;
 
 public class MainComparateurNomParMotsCommuns {

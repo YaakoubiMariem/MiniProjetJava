@@ -8,7 +8,6 @@ public class ComparateurNomCompletAvecMesure implements ComparateurNom{
 	        this.comparateurChaine = comparateurChaine;
 	    }
 	    
-	    @Override
 	    public double comparer(Nom n1, Nom n2) {
 	        if (n1 == null || n2 == null) {
 	            return 0.0;

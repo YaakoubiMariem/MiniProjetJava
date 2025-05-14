@@ -1,5 +1,4 @@
 package mini_projet;
-
 import java.text.Normalizer;
 import java.util.ArrayList;
 import java.util.List;

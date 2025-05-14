@@ -1,5 +1,4 @@
 package mini_projet;
-
 import java.util.*;
 
 public class GenerateurParMotsCommunsAvecIndex implements GenerateurCandidats {

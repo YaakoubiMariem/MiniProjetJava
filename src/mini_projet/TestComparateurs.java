@@ -1,5 +1,4 @@
 package mini_projet;
-
 public class TestComparateurs {
 
     public static void main(String[] args) {

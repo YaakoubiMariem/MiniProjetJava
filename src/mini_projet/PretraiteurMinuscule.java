@@ -2,6 +2,7 @@ package mini_projet;
 import java.util.ArrayList;
 import java.util.List;
 
+
 public class PretraiteurMinuscule implements Pretraiteur {
 
     public List<String> traiter(List<String> chaines) {

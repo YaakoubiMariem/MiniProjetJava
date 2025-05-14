@@ -25,12 +25,12 @@
     <groupId>com.ibm.icu</groupId>
     <artifactId>icu4j</artifactId>
     <version>74.2</version> <!-- ou la dernière version -->
-</dependency>
-<dependency>
-  <groupId>com.squareup.okhttp3</groupId>
-  <artifactId>okhttp</artifactId>
-  <version>4.12.0</version>
-</dependency>
+	</dependency>
+	<dependency>
+	  <groupId>com.squareup.okhttp3</groupId>
+	  <artifactId>okhttp</artifactId>
+	  <version>4.12.0</version>
+	</dependency>
 
     </dependencies>
   <build>

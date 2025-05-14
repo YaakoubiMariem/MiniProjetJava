@@ -1,5 +1,4 @@
 package mini_projet;
-
 import org.apache.commons.codec.language.Metaphone;
 import java.util.ArrayList;
 import java.util.List;

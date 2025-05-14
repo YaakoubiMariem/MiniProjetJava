@@ -6,7 +6,6 @@ public class GenerateurParTrigrammeAvecIndex implements GenerateurCandidats {
 
     private final int seuil; // nombre minimal de trigrammes communs
     private final Map<String, Set<Nom>> indexTrigrammes;
-
     public Map<String, Set<Nom>> getIndexTrigrammes() {
 		return indexTrigrammes;
 	}
