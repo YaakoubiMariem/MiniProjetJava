@@ -3,7 +3,6 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class PretraiteurPonctuation implements Pretraiteur {
-    @Override
     public List<String> traiter(List<String> chaines) {
         List<String> resultat = new ArrayList<>();
         for (String chaine : chaines) {
